@@ -10,7 +10,7 @@
         <!--DoIt-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="MyDoIt" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="TasksViewController" customModule="MyDoIt" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -76,7 +76,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kxG-HP-hz3">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kxG-HP-hz3">
                                 <frame key="frameInset" minX="172" minY="309" width="30" height="30"/>
                                 <state key="normal" title="Add"/>
                                 <connections>
@@ -97,6 +97,7 @@
                             <constraint firstItem="9ys-bk-fB2" firstAttribute="top" secondItem="V3v-Dl-5bM" secondAttribute="bottom" constant="30" id="jZP-y1-mOA"/>
                             <constraint firstItem="kxG-HP-hz3" firstAttribute="top" secondItem="9ys-bk-fB2" secondAttribute="bottom" constant="43" id="oo8-KS-qZ3"/>
                             <constraint firstItem="HVL-1s-deG" firstAttribute="top" secondItem="Dbs-cB-i5V" secondAttribute="bottom" constant="10" id="sku-E6-vhU"/>
+                            <constraint firstItem="kxG-HP-hz3" firstAttribute="centerX" secondItem="wka-UZ-B74" secondAttribute="centerX" id="yhp-Lb-jZL"/>
                         </constraints>
                     </view>
                     <connections>
