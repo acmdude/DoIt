@@ -16,19 +16,19 @@ class CreateTaskViewController: UIViewController {
     
     var previousVC = TasksViewController()
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
-
+    
     
     @IBAction func addTapped(_ sender: AnyObject) {
         
         //Create new task when Add buttom tapped.  Then add task to array in other viewController.
         
-      let task = Task()
+        let task = Task()
         task.name = taskNameTextField.text!
         task.important = importantSwitch.isOn
         
@@ -42,6 +42,6 @@ class CreateTaskViewController: UIViewController {
     
     
     
-   
-
+    
+    
 }
