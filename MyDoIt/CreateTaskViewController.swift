@@ -14,7 +14,7 @@ class CreateTaskViewController: UIViewController {
     @IBOutlet weak var taskNameTextField: UITextField!
     @IBOutlet weak var importantSwitch: UISwitch!
     
-    var previousVC = TasksViewController()
+    //var previousVC = TasksViewController()
     
     
     override func viewDidLoad() {
@@ -28,12 +28,20 @@ class CreateTaskViewController: UIViewController {
         
         //Create new task when Add buttom tapped.  Then add task to array in other viewController.
         
-        let task = Task()
+        //Add this to set for CoreData
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        
+        let task = Task(context: context)
+        //End add for CoreData
+        
         task.name = taskNameTextField.text!
         task.important = importantSwitch.isOn
+        //Save the new task
+        (UIApplication.shared.delegate as! AppDelegate).saveContext()
         
-        previousVC.tasks.append(task)
-        previousVC.tableView.reloadData()
+        //previousVC.tasks.append(task)
+        //previousVC.tableView.reloadData()
+        //Pop the previous view controller
         navigationController!.popViewController(animated: true)
         
         
